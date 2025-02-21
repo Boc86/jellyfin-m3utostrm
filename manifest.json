@@ -1,0 +1,18 @@
+[
+    {
+        "guid": "1",
+        "name": "M3U to STRM",
+        "description": "Translate Xtream codes in Movies and TV Shows to Jellyfin-readable .strm files..\n",
+        "overview": "Translate Xtream codes in Movies and TV Shows to Jellyfin-readable .strm files.",
+        "owner": "Boc",
+        "category": "Movies",
+        "versions": [
+            {
+                "version": "1.0.0",
+                "changelog": "- Initial release",
+                "sourceUrl": "https://github.com/Boc86/jellyfin-m3utostrm/releases/download/v1/m3utostrm-v1.0.0.zip",
+                "timestamp": "2025-02-21T13:00:05Z"
+            }
+        ]
+    }
+]
