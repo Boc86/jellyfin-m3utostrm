@@ -1,0 +1,27 @@
+{
+    "name": "jellyfin-m3utostrm",
+    "description": "A Jellyfin plugin that processes XTREAM M3U files into Jellyfin-readable .strm files.",
+    "version": "1.0.0",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/Boc86/jellyfin-m3utostrm.git"
+    },
+    "homepage": "https://github.com/Boc86/jellyfin-m3utostrm",
+    "bugs": {
+      "url": "https://github.com/Boc86/jellyfin-m3utostrm/issues"
+    },
+    "license": "MIT",
+    "author": {
+      "name": "Boc86",
+      "url": "https://github.com/Boc86"   
+    },
+    "dependencies": {},
+    "scripts": {
+      "preinstall": "echo 'Running pre-installation script...'",
+      "postinstall": "python m3utostrm.py --moviesDirectory /path/to/movies --tvShowsDirectory /path/to/tvshows --m3uUrl https://example.com/your.m3u",
+      "lint": "eslint ."
+    },
+    "devDependencies": {
+      "eslint": "^8.24.0"
+    }
+  }

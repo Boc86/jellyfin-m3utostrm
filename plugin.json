@@ -1,0 +1,39 @@
+{
+    "id": "m3utostrem",
+    "name": "XTream Catalogue",
+    "description": "A Jellyfin plugin to process XTREAM M3U files into Jellyfin-readable .strm files for Movies and TV Shows.",
+    "version": "1.0.0",
+    "author": "Boc",
+    "dependencies": {},
+    "settings": [
+        {
+            "name": "MoviesDirectory",
+            "type": "string",
+            "description": "The directory where movies should be stored.",
+            "defaultValue": "/path/to/movies/",
+            "isSecret": false
+        },
+        {
+            "name": "TvShowsDirectory",
+            "type": "string",
+            "description": "The directory where TV shows should be stored.",
+            "defaultValue": "/path/to/tvshows/",
+            "isSecret": false
+        },
+        {
+            "name": "M3uUrl",
+            "type": "string",
+            "description": "The URL of the XTREAM M3U file to process.",
+            "defaultValue": "http://example.com/m3ufile.m3u",
+            "isSecret": true
+        },
+        {
+            "name": "AutoUpdateIntervalMinutes",
+            "type": "int",
+            "description": "How often (in minutes) the plugin should automatically update from the M3U file.",
+            "defaultValue": 1440,
+            "minValue": 15,
+            "maxValue": 2880
+        }
+    ]
+}
